@@ -22,10 +22,12 @@ searchUser.addEventListener('keyup', (e) => {
         } else {
           //show alert
           ui.showProfile(data.profile);
+          ui.showRepos(data.repos);
         }
       })
   } else {
     //clear profile
     ui.clearProfile();
+    
   }
 });
